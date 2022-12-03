@@ -79,6 +79,9 @@ body{
     display: none;
 }
 
+#logoLink{
+    text-decoration: none;
+}
 
 @media screen and (min-width:480px) {
     .body-part{
