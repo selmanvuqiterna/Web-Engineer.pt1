@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Login.css">
+    <script defer src="login.js"></script>
     <title>Login Page</title>
 </head>
 <body>
@@ -23,14 +24,17 @@
         <h1 id="body-title">Log In</h1>
 
         <div id="form-input">
-            <form action="">
-                <input class="inputs" placeholder="Enter your email or Username" type="text"> <br>
-                <input class="inputs" placeholder="Enter your password" type="password">
+            <form id="form" >
+                <input class="inputs" id="username" placeholder="Enter your Username" type="text" name="username" required > <br>
+                <input class="inputs" id="password" placeholder="Enter your password" type="password" name="password">
             </form>
             <a href="#" id="forgot-pass">Forgot Password ?</a>
-            <button id="submit-button" type="submit">Login</button>
-            <a href="../Register/Register.html"> <button id="register-button" type="submit">Register</button> </a>
+            <button id="submit-button" type="submit"  onclick="validateForm()">Login</button>
+            <a href="../Register/Register.html"> <button id="register-button" type="submit" value="submit">Register</button> </a>
         </div>
     </div>
+
+
+    
 </body>
 </html>

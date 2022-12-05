@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Register.css">
-    <title>Document</title>
+    <script defer src="register.js"></script>
+    <title>Register Page</title>
 </head>
 <body>
     <nav class="nav-bar">
@@ -23,16 +24,16 @@
         <h1 id="body-title">Register</h1>
 
         <div id="form-input">
-            <form id="formular" action="">
-                <input class="inputs" placeholder="Full Name" type="text"> <br>
-                <input class="inputs" placeholder="Username" type="text">
-                <input class="inputs" placeholder="Email" type="text"> <br>
-                <input class="inputs" placeholder="Phone Number" type="number">
-                <input class="inputs" placeholder="Password" type="password"> <br>
-                <input class="inputs" placeholder="Comfirm your password" type="password">
+            <form id="formular">
+                <input class="inputs" placeholder="Full Name" type="text" id="fullname"> <br>
+                <input class="inputs" placeholder="Username" type="text" id="username">
+                <input class="inputs" placeholder="Email" type="text" id="email"> <br>
+                <input class="inputs" placeholder="Phone Number" type="number" id="phone">
+                <input class="inputs" placeholder="Password" type="password" id="password"> <br>
+                <input class="inputs" placeholder="Comfirm your password" type="password" id="confirmPassword">
             </form>
             <a href="../Login/Login.html" id="forgot-pass">Already have an account? Login</a>
-            <a href="#"> <button id="register-button" type="submit">Register</button> </a>
+             <button id="register-button" type="submit" onclick="validateForm()">Register</button>
         </div>
     </div>
 </body>
